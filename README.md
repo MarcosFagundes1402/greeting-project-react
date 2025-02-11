@@ -1,4 +1,5 @@
-# greeting-project
+# greeting-project-react
+
  relógio de saudações com react
 
  Este é meu primeiro projetinho simples, o projeto inicial era apenas mostrar uma saudação
