@@ -1,21 +1,20 @@
 
 export const Greeting = () => {
 
-    const date = new Date()
-    const hour = date.getHours()
-    let msg = ''
+    const hour = new Date().getHours()
+    let greeting = ''
 
-    if (hour >= 6 && hour < 12){ 
-        msg = 'Bom dia! ☀️'
+    if (hour >= 0 && hour < 12){ 
+        greeting = 'Bom dia! ☀️'
     } else if (hour >= 12 && hour < 18){
-        msg = 'Boa Tarde! ⛅'
-    }else{
-        msg = 'Boa noite! 🌙'
+        greeting = 'Boa Tarde! ⛅'
+    }else if (hour >= 18 && hour <= 23){
+        greeting = 'Boa noite! 🌙'
     }
     
     return (
         <div>
-            {msg}
+            {greeting}
         </div>
     );
 }
